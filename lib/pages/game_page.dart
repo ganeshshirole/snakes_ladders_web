@@ -28,12 +28,12 @@ class GamePage extends StatelessWidget {
 
   var rnd = new Random();
   var diceIcons = [
-    'one.webp',
-    'two.webp',
-    'three.webp',
-    'four.webp',
-    'five.webp',
-    'six.webp'
+    'one.png',
+    'two.png',
+    'three.png',
+    'four.png',
+    'five.png',
+    'six.png'
   ];
 
   static const ANIMATE_PADDING = 6.0;
@@ -64,7 +64,7 @@ class GamePage extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: Stack(
                         children: <Widget>[
-                          Image.asset('snakes_ladders_game_background.webp'),
+                          Image.asset('snakes_ladders_game_background.png'),
                           FutureBuilder<GridData>(
                             future: _readJson(),
                             builder: (BuildContext context,
@@ -112,7 +112,7 @@ class GamePage extends StatelessWidget {
                                                     padding:
                                                         const EdgeInsets.all(2.0),
                                                     child: Image.asset(
-                                                      'pawn_1.webp',
+                                                      'pawn_1.png',
                                                       fit: BoxFit.fitHeight,
                                                       width: screenWidth / 16,
                                                     ),
@@ -128,7 +128,7 @@ class GamePage extends StatelessWidget {
                                                     padding:
                                                         const EdgeInsets.all(2.0),
                                                     child: Image.asset(
-                                                      'pawn_2.webp',
+                                                      'pawn_2.png',
                                                       fit: BoxFit.fitHeight,
                                                       height: screenWidth / 16,
                                                     ),
@@ -163,7 +163,7 @@ class GamePage extends StatelessWidget {
                               return AnimatedContainer(
                                   padding: EdgeInsets.all(animated1Padding),
                                   child: Image.asset(
-                                    'pawn_1_no_shadow.webp',
+                                    'pawn_1_no_shadow.png',
                                     fit: BoxFit.fitHeight,
                                   ),
                                   duration: animationDuration,
@@ -198,7 +198,7 @@ class GamePage extends StatelessWidget {
                               return AnimatedContainer(
                                   padding: EdgeInsets.all(animated2Padding),
                                   child: Image.asset(
-                                    'pawn_2_no_shadow.webp',
+                                    'pawn_2_no_shadow.png',
                                     fit: BoxFit.fitHeight,
                                   ),
                                   duration: animationDuration,
